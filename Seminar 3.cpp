@@ -1,3 +1,9 @@
+/*
+Napisati program koji otvara web stranice navedene u datoteci.
+Program mora otvoriti neku tekstualnu datoteku na disku u kojoj se nalazi popis web stranica
+Svaku web stranicu mora otvoriti u zasebnom prozoru preglednika. Svaki poziv CreateProcess funkcije
+mora biti u novoj niti.
+*/
 #include <stdio.h>
 #include <conio.h> 
 #include <windows.h>
