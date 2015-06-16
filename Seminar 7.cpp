@@ -4,6 +4,7 @@ i iza toga broj(npr. OtvoiSlike.exe 5). Broj označava koliko program slika treb
 Ako je broj veći od postojećih datoteka, program javlja grešku. Program dohvaća prvih n slika koje je korisnik
 naveo i otvara u programu mspaint.exe. Svaka slika se otvara preko posebne niti.
 */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -13,7 +14,7 @@ naveo i otvara u programu mspaint.exe. Svaka slika se otvara preko posebne niti.
 using namespace std;
 
 
-STARTUPINFO startInfo; //koristimo prilikom pokretanja procesa
+STARTUPINFO startInfo;	//koristimo prilikom pokretanja procesa
 PROCESS_INFORMATION processInfo;
 
 /*Funkcija za konvertiranje stringa u LPTSTR koji se koristi kao drugi parametar pri pokretanju procesa*/
@@ -24,7 +25,7 @@ LPTSTR ConvertToLPTSTR(string stringToConvert)
 
 	return wprocessName;
 }
-int brojac=-1;//-1 jer se pri prvom ulasku u funkciju poveća za 1 pa postaje 0
+int brojac=-1;	//-1 jer se pri prvom ulasku u funkciju poveća za 1 pa postaje 0
 
 /*Funkcija koju pozivamo prilikom kreiranja svake niti*/
 DWORD WINAPI otvori(LPVOID parametriNiti)
